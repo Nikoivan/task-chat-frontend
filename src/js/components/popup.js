@@ -9,7 +9,7 @@ export default class PopupController {
   }
 
   showPopup(element, onElement) {
-    const { top, left } = onElement.getBoundingClientRect();
+    const { left } = onElement.getBoundingClientRect();
 
     element.classList.add("popup");
     document.body.append(element);

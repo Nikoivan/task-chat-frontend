@@ -20,7 +20,7 @@ export default class TooltipController {
   }
 
   showTooltip(data) {
-    const { status, message, onElement } = data;
+    const { form, onElement } = data;
 
     const tooltipEl = document.createElement("div");
     tooltipEl.classList.add("tooltip");
@@ -52,7 +52,7 @@ export default class TooltipController {
     this.position[method](
       tooltipEl,
       onElement,
-      onElement.getBoundingClientRect()
+      onElement.getBoundingClientRect(),
     );
 
     setTimeout(() => tooltipEl.remove(), 3000);

@@ -27,7 +27,7 @@ export default class Chat {
           id: this.id,
           name: this.name,
         },
-      })
+      }),
     );
   }
 
@@ -73,7 +73,6 @@ export default class Chat {
   }
 
   registerEvents(data) {
-    console.log(data);
     if (data.type !== "send") {
       this.usersAPI.update(data);
       return;
@@ -119,9 +118,9 @@ export default class Chat {
         message,
         type: "send",
         time: `${moment().hour()}:${moment().minutes()} ${moment().format(
-          "DD-MM-YY"
+          "DD-MM-YY",
         )}`,
-      })
+      }),
     );
 
     this.chatInput.value = "";
