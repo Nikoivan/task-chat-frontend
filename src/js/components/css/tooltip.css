@@ -1,0 +1,35 @@
+.tooltip {
+    background: #E7E2E2;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 2rem;
+    border: 2px solid #ad0000;
+}
+
+.tooltip:after {
+    content:'';
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    margin-left: -16px;
+    border: 16px solid transparent;
+    border-top: 10px solid #ad0000;
+}
+
+.tolltip-status {
+    display: block;
+    background-color: #ad0000;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tooltip-error-message {
+    margin-top: 1rem;
+    display: block;
+    font-size: 24px;
+}

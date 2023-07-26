@@ -8,7 +8,7 @@ const createRequest = async (options) => {
   });
 
   const json = await response.json();
-  console.log(json);
+  return json;
 };
 
 export default createRequest;

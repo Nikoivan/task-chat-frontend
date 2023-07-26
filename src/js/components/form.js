@@ -8,7 +8,7 @@ export default class FormController {
     formWrap.classList.add("form-wrapper");
     formWrap.innerHTML = `<div class="form-header"><span class="form-title">Выберите псевдоним</span></div>
     <form class="entry-chat-form">
-        <input class="chat-input">
+        <input class="input chat-input">
         <button class="chat-btn">Продолжить</button>
     </form>`;
 
