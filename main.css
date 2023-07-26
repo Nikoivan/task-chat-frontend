@@ -1,0 +1,144 @@
+.btn {
+    margin: 2rem auto;
+}
+.chat-wrapper {
+    display: flex;
+    margin: auto;
+}
+
+.users {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-radius: 5px;
+    max-height: fit-content;
+   padding-right: 20px;
+}
+
+.users-list {
+    list-style-type: circle;
+}
+
+.my {
+    color: #ad0000;
+}
+
+.chat {   
+    flex-grow: 1;
+    padding: 1.5rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    max-height: 90%;
+}
+
+.messages-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-input {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.message {
+    margin-top: 1rem;
+}
+
+.your {
+    align-self: flex-end;
+    color: #ad0000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.name {
+    margin-right: 10px;
+}
+
+.message-main {
+    margin-top: 10px;
+}
+
+.content { 
+    color: #000;
+    font-size: 20px;      
+}
+
+.form-wrapper {
+    max-width: 400px;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form-title {
+    font-size: 24px;
+}
+
+.entry-chat-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-input {
+    min-width: 380px;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.chat-btn {
+    margin-top: 20px;
+    width: 260px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.popup {
+    position: absolute;
+}
+.tooltip {
+    background: #E7E2E2;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 2rem;
+    border: 2px solid #ad0000;
+}
+
+.tooltip:after {
+    content:'';
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    margin-left: -16px;
+    border: 16px solid transparent;
+    border-top: 10px solid #ad0000;
+}
+
+.tolltip-status {
+    display: block;
+    background-color: #ad0000;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tooltip-error-message {
+    margin-top: 1rem;
+    display: block;
+    font-size: 24px;
+}
